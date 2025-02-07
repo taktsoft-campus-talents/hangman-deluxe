@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   gap: 6px;
+  margin-bottom: 15px;
 }
 
 .alphabet-container > div {

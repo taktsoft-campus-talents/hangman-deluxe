@@ -15,4 +15,14 @@
   border-radius: 10px;
   background-color: #baf2d8;
   color: black;
+  font-size: 16px;
+}
+
+.start_btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #baf2d8;
+  border: none;
+  margin-right: 15px;
+  font-size: 16px;
 }
