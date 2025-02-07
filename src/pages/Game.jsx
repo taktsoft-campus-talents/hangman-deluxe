@@ -30,9 +30,19 @@ export default function Game() {
     }
   });
 
+  const fullWordLetters = fullWord.split("");
+  const hiddenWordLetters = fullWordLetters.map((letter) => {
+    if (guessedLetters.includes(letter)) {
+      return letter;
+    } else {
+      return "?";
+    }
+  });
+  const hiddenWord = hiddenWordLetters.join("");
+
   return (
     <section className="game_section">
-      <DisplayWord></DisplayWord>
+      <DisplayWord word={hiddenWord}></DisplayWord>
       <AlphabetDisplay
         alphabet={alphabet}
         onLetterSelect={handleLetterSelect}
@@ -40,8 +50,6 @@ export default function Game() {
       <Link to="/result" className="result_btn">
         See results
       </Link>
-      <p>{JSON.stringify(guessedLetters)}</p>
-      <p>{JSON.stringify(alphabet)}</p>
     </section>
   );
 }

@@ -11,8 +11,6 @@ function DisplayWord({ word = "Di??icul??" }) {
     result = word;
   }
 
-  console.log(result);
-
   return (
     <div className="word_container">
       <h3>Guess the word!</h3>
