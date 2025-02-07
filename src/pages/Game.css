@@ -1,0 +1,18 @@
+.game_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game_section h1 {
+  align-self: flex-start;
+}
+
+.result_btn {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #baf2d8;
+  color: black;
+}
