@@ -11,15 +11,17 @@ function DisplayWord({ word = "Di??icul??" }) {
     result = word;
   }
 
-  console.log(result);
-
   return (
     <div className="word_container">
       <h3>Guess the word!</h3>
 
       <div className="word_item">
-        {result.map((item) => {
-          return item === "?" ? <span>_</span> : <span>{item}</span>;
+        {result.map((item, index) => {
+          return item === "?" ? (
+            <span key={index}>_</span>
+          ) : (
+            <span key={index}>{item}</span>
+          );
         })}
       </div>
     </div>
