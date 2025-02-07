@@ -10,11 +10,10 @@ export default function Game() {
   const [fullWord, setFullWord] = useState();
 
   function handleRandomWordSelect(wordList) {
-    const wordIndex = Math.floor(Math.random() * 100);
+    const wordIndex = Math.floor(Math.random() * wordList.length);
 
-    const result = wordList[wordIndex];
+    const result = wordList[wordIndex].toUpperCase();
 
-    console.log(result);
     setFullWord(result);
   }
 
